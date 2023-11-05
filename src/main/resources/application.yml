@@ -1,0 +1,3 @@
+weather:
+  api:
+    key: API_KEY # https://www.iqair.com/
