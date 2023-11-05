@@ -17,4 +17,22 @@ interface WeatherApiClient {
     fun getSupportedCountries(
         @Query("key") key: String,
     ): Call<GetSupportedCountriesResponse>
+
+    // POST, PUT은 예시 API에 없으므로 예시만 남김
+    // @Body : Request Body
+    // @Path : Path Variable
+    // @Query : Query Parameter
+    @POST("/v2/countries")
+    fun postSupportedCountries(
+        @Body request: GetSupportedStatesResponse,
+        @Path("state") state: String,
+        @Query("key") key: String,
+    ): Call<GetSupportedStatesResponse>
+
+    @PUT("/v2/states")
+    fun putSupportedStates(
+        @Header("Authorization") authorization: String,
+        @Body request: GetSupportedStatesResponse,
+        @Query("key") key: String,
+    ): Call<GetSupportedStatesResponse>
 }
