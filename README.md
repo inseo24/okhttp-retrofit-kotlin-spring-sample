@@ -1,4 +1,4 @@
-# Retrofit 및 OkHttp를 사용한 Spring Boot HTTP 클라이언트 예시
+# Retrofit 및 OkHttp를 사용한 Kotlin + Spring Boot 예시
 
 이 예시 코드는 Kotlin 및 Spring Boot를 사용하여 Retrofit 및 OkHttp를 통해 HTTP 클라이언트를 구현하는 방법을 보여줍니다.
 
